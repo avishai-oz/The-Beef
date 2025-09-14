@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace The_Beef.Infrastructure.Json;
 
-public static class JsonStore
+public static class JsonUtills
 {
     public static readonly JsonSerializerOptions Options = new()
     {

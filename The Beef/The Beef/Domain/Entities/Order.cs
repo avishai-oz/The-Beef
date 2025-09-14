@@ -1,12 +1,16 @@
 ﻿using The_Beef.Domain.Orders;
 using The_Beef.Domain.Entities;
+using The_Beef.Domain.Enums;
+
 namespace The_Beef.Domain.Entities;
 
 public class Order 
 {
     public string OrderId { get; }
     public User User { get; }
+    public string UserId => User.Id;
     public string userName => User.Name;
+    public MembershipType UserMembership => User.Membership;
     public string TableID { get; }
     
     private readonly List<OrderItem> _items = new();
