@@ -95,7 +95,7 @@ public sealed class ConsoleReceiptRenderer : IReceiptRenderer
         Console.WriteLine($"Subtotal: {dto.Subtotal.ToString("0.00", c)}");
         Console.WriteLine($"Discount: {dto.DiscountAmount.ToString("0.00", c)}");
         Console.WriteLine($"TOTAL:    {dto.FinalAmount.ToString("0.00", c)}");
-        Console.WriteLine($"Wallet:   {dto.WalletBefore.ToString("0.00", c)} → {dto.WalletAfter.ToString("0.00", c)}");
+        Console.WriteLine($"Wallet: Befoul: {dto.WalletBefore.ToString("0.00", c)} → After: {dto.WalletAfter.ToString("0.00", c)}");
         Console.WriteLine("===================");
     }
 }
