@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("The Beef")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3424128f0984c7b1447e01662a1db711e1bca72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7eb4f7eee5c4add0941cf42f310e07bcb8428156")]
 [assembly: System.Reflection.AssemblyProductAttribute("The Beef")]
 [assembly: System.Reflection.AssemblyTitleAttribute("The Beef")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

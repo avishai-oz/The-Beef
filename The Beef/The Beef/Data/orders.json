@@ -1,2 +1,26 @@
-﻿[
+[
+  {
+    "orderId": "0a58c2c8d5574eeeb9a93943abe3a8c5",
+    "userId": "U1",
+    "tableId": "T1",
+    "items": [
+      {
+        "dishID": "D1",
+        "quantity": 1,
+        "unitPrice": 42.00,
+        "lineTotal": 42.00
+      },
+      {
+        "dishID": "D2",
+        "quantity": 2,
+        "unitPrice": 15.50,
+        "lineTotal": 31.00
+      }
+    ],
+    "subtotal": 73.00,
+    "finalAmount": 65.70,
+    "userNameAtPurchase": "Dana",
+    "membershipAtPurchase": "premium",
+    "createdAtUtc": "2025-09-14T22:01:38.7050557Z"
+  }
 ]

@@ -15,7 +15,7 @@ IReceiptRenderer renderer    = new ConsoleReceiptRenderer();
 
 var seating   = new SeatingService(tableRepo);
 var selection = new DishSelectionService(menuRepo);
-var orders    = new OrderService();
+var orders    = new OrderService(orderRepo);
 var wallet    = new WalletService(userRepo);
 var receipt   = new ReceiptService(menuRepo, renderer);
 
@@ -25,7 +25,7 @@ var table  = await seating.AssignTable(user, partySize: 2);
 var picks  = await selection.ByNames(new[] { ("Burger", 1), ("Fries", 2) });
 
 // ----- יצירת הזמנה + תמחור -----
-var order = orders.Create(user, table, picks);
+var order = await orders.Create(user, table, picks);
 
 // ----- חיוב ארנק -----
 var walletBefore = user.Wallet;
