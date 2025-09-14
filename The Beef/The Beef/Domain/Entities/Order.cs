@@ -6,6 +6,7 @@ public class Order
 {
     public string OrderId { get; }
     public User User { get; }
+    public string userName => User.Name;
     public string TableID { get; }
     
     private readonly List<OrderItem> _items = new();
