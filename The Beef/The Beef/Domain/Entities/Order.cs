@@ -37,7 +37,7 @@ public class Order
         if (item is null) throw new ArgumentNullException(nameof(item));
         _items.Add(item);
         RecalculateSubtotal();
-        if (FinalAmount > Subtotal) FinalAmount = Subtotal; // לשמור אינבריאנט
+        if (FinalAmount > Subtotal) FinalAmount = Subtotal;
     }
 
     public void ApplyFinal(decimal finalAmount)
